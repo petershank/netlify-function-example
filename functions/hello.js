@@ -3,6 +3,6 @@ exports.handler = async (event) => {
   return {
     statusCode: 200,
     body: `I got a request.
-    Hello ${subject}!`,
+Hello ${subject}!`,
   };
 };

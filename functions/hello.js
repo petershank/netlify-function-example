@@ -11,8 +11,8 @@ exports.handler = async (event, context) => {
   const params = querystring.parse(event.body);
   //const name = params.line_items(0).name || "Super Crazy World";
 
-  console.log(`hello, ${typeof params}`);
-  console.log(`hello, ${Object.keys(params)}`);
+  console.log(typeof params);
+  console.log(Object.keys(params));
   //console.log(`hello, ${Object.keys(params)[0]}`);
   // console.log(`hello ${name}`);
   return {

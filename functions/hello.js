@@ -11,7 +11,8 @@ exports.handler = async (event, context) => {
   const params = querystring.parse(event.body);
   const name = params.line_items(0).name || "Super Crazy World";
 
-  console.log(`hello ${name}`);
+  console.log(params);
+  // console.log(`hello ${name}`);
   return {
     statusCode: 200,
     body: `Hello there, ${name}.  You're awesome.`,

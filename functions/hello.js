@@ -12,7 +12,8 @@ exports.handler = async (event, context) => {
   //const name = params.line_items(0).name || "Super Crazy World";
 
   console.log(`hello, ${typeof params}`);
-  console.log(`hello, ${Object.keys(params)[0]}`);
+  console.log(`hello, ${params.id}`);
+  //console.log(`hello, ${Object.keys(params)[0]}`);
   // console.log(`hello ${name}`);
   return {
     statusCode: 200,

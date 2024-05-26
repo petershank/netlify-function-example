@@ -12,8 +12,8 @@ exports.handler = async (event, context) => {
   //const name = params.line_items(0).name || "Super Crazy World";
 
   console.log(typeof params);
-  console.log(params);
-  //console.log(Object.keys(event.body));
+  //console.log(params);
+  console.log(Object.keys(params));
   //console.log(`hello, ${Object.keys(params)[0]}`);
   // console.log(`hello ${name}`);
   return {
